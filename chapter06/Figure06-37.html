@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<video id="video" poster="preview.png"  controls width="480" height="360">
+   <source src="sample.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+   <source src="sample.webm" type='video/webm; codecs="vp8, vorbis"'>
+   <source src="sample.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+   <!-- Use Flash if above video formats not supported -->
+   <object width="480" height="360" type="application/x-shockwaveflash" data="sample.swf">
+       <param name="movie" value="sample.swf">
+       <param name="flashvars" value="controlbar=over&amp;image=preview.jpg&amp;file=sample.mp4">
+       <img src="preview.jpg" width="480" height="360" alt="" title="video not support">
+   </object>
+</video>
+</body>

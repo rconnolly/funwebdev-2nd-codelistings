@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 9</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+   
+<div id="first">
+   <h1>DOM Example</h1>
+   <p>Existing element</p>
+</div>
+<script>
+// begin by creating two new nodes
+var text = document.createTextNode("this is dynamic");
+var p = document.createElement("p");
+// add the text node to the <p> element node
+p.appendChild(text);
+// now add the new <p> element to the <div>
+var first = document.getElementById("first");
+first.appendChild(p);
+</script>
+        
+</body>
+</html>

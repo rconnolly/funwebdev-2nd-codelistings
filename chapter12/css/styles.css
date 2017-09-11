@@ -1,0 +1,121 @@
+body {
+    font-family:   Roboto, Arial, sans-serif;
+    font-size: 1em;
+    background-color: #ECEFF1;
+}
+header {
+   background-color: #37474f;
+   height: 80px;
+    padding: 15px 0 5px 25px;
+}
+header h1 {
+    float: left;
+    font-size: 32px;
+    color: white;
+}
+header h1 span {
+    color: #ff6e40;
+}
+
+header nav {
+     float: right;  
+    margin: 20px 15px 10px 10px;
+}
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #FF3D00;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+
+
+.container {
+  max-width: 1100px;
+  margin: 1em auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.card {
+	background: white;
+	margin-bottom: 2em;	
+    
+    display: flex;
+    flex: 0 1 auto;
+    
+    width: 75%;
+    padding: 0;
+}
+.list {
+    width: 23%;   
+}
+
+.card-content ul {
+    list-style: none;
+    padding-left: 10px;
+    
+}
+.card-content li {
+    margin-top: 10px;
+    
+}
+.card-content p {
+	padding: 0.5em 1.4em 0 1.4em;
+	font-size: 90%;  
+    
+}
+.card-content span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* styles for small screens */
+
+@media only screen and (max-width:480px)
+{
+    header {
+        height: 60px;
+        padding: 5px 0 5px 25px;
+    }
+    header h1 {
+        margin-top: 5px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+/* styles for tablet screens */
+@media only screen and (min-width: 481px)
+and (max-width: 768px)
+{
+    .card {
+        width: 45%;
+    }
+}

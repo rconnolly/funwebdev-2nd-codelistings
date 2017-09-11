@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
+   <style>
+        body {
+           background-color: #FFCA28;
+           font-family: "Roboto", Verdana, Arial, sans-serif;            
+           font-size: 1.1em;
+        }
+
+        fieldset {
+           margin: 20px 5px 0 25px;
+           padding: 5px 15px 15px 15px;
+        }
+
+        legend {
+           font-size: 1.25em;
+        }
+   </style>
+</head>
+<body>
+<form method="get" action="http://examples.funwebdev.com/process.php">
+  <fieldset>
+     <legend>Details</legend>
+     <p>
+       <label>Title: </label>
+       <input type="text" name="title" />
+     </p>
+     <p>
+       <label>Country: </label>
+       <select name="where">
+         <option>Choose a country</option>
+         <option>Canada</option>
+         <option>Finland</option>
+         <option>United States</option>
+        </select>
+     </p>
+     <input type="submit" />
+  </fieldset>
+</form>
+</body>
+</html>

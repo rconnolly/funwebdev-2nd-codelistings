@@ -1,0 +1,4 @@
+<Directory /var/www/folder1/>
+DirectoryIndex index.php index.html
+Options +Indexes
+</Directory>

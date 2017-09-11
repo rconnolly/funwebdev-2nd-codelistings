@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 7</title>
+<style>
+html, body, header, footer, aside, div, p, h1, h2, h3, li, ul
+{
+   margin: 0;
+   padding: 0;
+   font-family { font-family: Verdana, Geneva, sans-serif; }
+   font-size: 0.8em;
+}
+
+h1 { font-size: 1.5em; margin: 0.25em;}
+h2 { font-size: 1.25em; margin: 0.25em;}
+h3 { font-size: 1em; margin: 0.25em;}
+p { margin: 0.25em 0; }
+a:link, a:visited { color: #090388; }
+
+li { list-style-type: none; margin: 0.25em 0; }
+
+header {
+   color: white;
+   background-color: #303f9f;
+   height: 3em;
+     padding: 0.5em;
+}
+div#wrapper {
+   width: 960px;
+/*    margin-left: auto ;
+  margin-right: auto ; */
+   background-color: #5c6bc0;
+}
+div#container {
+   position: relative;
+}
+nav {
+  color: #333;
+  width: 200px;
+  background-color: #e8eaf6;
+  padding: 0.5em;  
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+div#main {
+    padding: 0.5em;
+    margin-left: 220px;
+    margin-right: 220px;
+    background-color: white;
+}
+aside {
+  color: #333;
+  width: 200px;
+  background-color: #e8eaf6;
+  padding: 0.5em;  
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+footer {
+  color: white;
+  background-color: #78BA00;
+  height: 3em;
+  padding: 0.5em;
+}
+
+.box { 
+   border: 1pt solid black;
+   margin: 3px 3px 10px 3px;
+   padding: 5px;
+}   
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+   <h1>Share Your Travels</h1>
+</header>
+<div id="container">
+   <div id="main">
+         <h2>Page Title</h2>
+         <figure>
+         <img src="images/828.jpg" alt="" />
+         <figcaption>British Museum</figcaption>
+         </figure>
+         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+         <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!</p>
+
+   </div>
+   <nav>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Australia</a></li>
+        <li><a href="#">Belgium</a></li>
+        <li><a href="#">Canada</a></li>
+        <li><a href="#">France</a></li>
+        <li><a href="#">Germany</a></li>
+        <li><a href="#">Italy</a></li>
+        <li><a href="#">Mexico</a></li>
+        <li><a href="#">Poland</a></li>
+        <li><a href="#">United Kingdom</a></li>
+        <li><a href="#">United States</a></li>     
+      </ul>
+   </nav>
+
+   <aside>
+      <div class="box">
+         <h3>Cart</h3>
+         <p>You have no items in your cart</p>
+      </div>
+      <div class="box">
+         <h3>Wish List</h3>
+         <p>You have three items in your wish list</p>
+      </div>   
+   </aside>
+
+</div>
+<footer>
+   <p>footer navigation</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 10</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+    
+<button id="example">Click me</button>
+<span id="message"></span>
+<script>
+    
+// javcascript version    
+/*document.getElementById("example").addEventListener("click", function () {
+   document.getElementById("message").innerHTML = "you clicked";
+});*/
+
+// jquery version
+/*$("#example").on("click",  function () {
+   $("#message").html("you clicked");
+}); */
+    
+// alternate jquery version
+$("#example").click(function () {
+   $("#message").html("you clicked");
+});     
+</script> 
+</body>
+</html>

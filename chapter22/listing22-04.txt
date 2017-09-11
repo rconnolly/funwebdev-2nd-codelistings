@@ -1,0 +1,7 @@
+Country Name (2 letter code) [AU]:CA
+State or Province Name (full name) [Some-State]:Alberta
+Locality Name (eg, city) []:Calgary
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Pearson Ed.
+Organizational Unit Name (eg, section) []:Computer Science
+Common Name (e.g. server FQDN or YOUR name) []:funwebdev.com
+Email Address []:ricardo.hoar@sheridancollege.ca

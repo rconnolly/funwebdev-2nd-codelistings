@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Chapter 10</title>
+    <link rel="stylesheet" href="css/extended-example1.css">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+<script>
+$(function () {
+   $("#menu").hide();
+   $("#menuBtn").on("mouseenter", function () {
+      $("#menu").slideDown(500);
+   });
+   $("#menuBtn").on("mouseleave", function () {
+      $("#menu").slideUp(300);
+   });
+});
+</script>      
+</head>    
+<body>
+<main>  
+<button id="menuBtn">Menu</button>
+<ul id="menu">
+   <li><a href="#">Menu item 1</a></li>
+   <li><a href="#">Menu item 2</a></li>
+   <li><a href="#">Menu item 3</a></li>
+   <li><a href="#">Menu item 4</a></li>
+</ul>
+</main>      
+   
+</body>   
+</html>

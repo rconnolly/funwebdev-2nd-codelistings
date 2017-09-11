@@ -1,0 +1,50 @@
+<html>
+<head>
+   <title>Chapter 10</title>
+   <style>
+      #rectangle {
+          background-color:  black;
+          width: 200px;
+          height: 150px;
+          position: absolute;
+          top: 120px;
+          left: 40px;
+      }
+    </style>
+   
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script>
+   $(function() {
+
+       $("#rectangle").click(function() {
+           // animate the current object
+           $(this).animate(
+               // parameter 1: object literal containing CSS options
+               {
+                   opacity: "0.3",
+                   width: "400px",
+                   height: '100px'
+               },
+               // parameter 2: object literal containing animate options
+               {
+                   step: function(now, fx) {
+                       // for each step of the height animation ...
+                       if (fx.prop == "height") {
+                           // roate the rectange a certain percentage
+                           var angle = (now / 100) * 360;
+                           // rotate it via CSS transform
+                           $(this).css("transform", "rotate(" + angle + "deg)");
+                       }
+                   },
+                   duration: 2000,
+                   easing: "linear"
+               }
+           );
+       });
+   });
+   </script>      
+</head>    
+<body>  
+    <div id="rectangle"></div>     
+</body>   
+</html>

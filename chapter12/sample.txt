@@ -1,0 +1,4 @@
+01070,Picasso,The Actor,1904
+01080,Picasso,Family of Saltimbanques,1905
+02070,Matisse,The Red Madras Headdress,1907
+05010,David,The Oath of the Horatii,1784

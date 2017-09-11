@@ -1,0 +1,11 @@
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+ServerName www.funwebdev.com
+DocumentRoot /www/funwebdev
+</VirtualHost>
+
+<VirtualHost *:80>
+ServerName www.otherdomain.tld
+DocumentRoot /www/otherdomain
+</VirtualHost>

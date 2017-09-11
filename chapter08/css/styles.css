@@ -1,0 +1,15 @@
+.box {
+    width:20em;
+    margin:  20px auto;
+    padding: 0.5em;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    background-color:#fff ; 
+    text-align: left;
+}
+
+.boxImg { 
+    float: left; 
+    padding: 5px;    
+}

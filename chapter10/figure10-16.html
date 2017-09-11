@@ -1,0 +1,53 @@
+<html>
+<head>
+   <title>Chapter 10</title>
+   <link rel="stylesheet" href="css/figure10-16.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+   <script>
+   $(function() {
+
+       $('#notifyBtn').on("click", function () {
+          showNotification();
+
+           window.setTimeout(function() {    
+               dismissNotification();
+           }, 4000);       
+       });
+
+       $('#dismissBtn').on("click", function () {
+           dismissNotification();
+       });  
+
+   });
+
+
+   function showNotification() {
+       //$('.notification').animate({width:'toggle'},500); 
+
+       $('.notification')
+           .animate({right:'0px', opacity: "1"},500)
+           .animate({top: "0"}); 
+   }
+
+   function dismissNotification() {
+       $('.notification').fadeOut(500);
+       $('#notifyBtn').fadeOut(500);
+   }
+   </script>      
+</head>    
+<body>
+  <button id="notifyBtn">See notification</button>   
+  <div class="notification">
+    <div class="info">
+      <h1>New event created</h1>
+      <p>Please check your calendar</p>
+      <a href="#" class="btn" id="dismissBtn">Dismiss</a>
+    </div>
+    <div class="icon">
+      <i class="fa fa-calendar-plus-o"></i>
+    </div>
+  </div>    
+</body>   
+</html>

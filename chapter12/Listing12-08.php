@@ -1,0 +1,15 @@
+<form method="get">
+Please select days of the week you are free.<br />
+Monday <input type="checkbox" name="day[]" value="Monday" /> <br />
+Tuesday <input type="checkbox" name="day[]" value="Tuesday" /> <br />
+Wednesday <input type="checkbox" name="day[]" value="Wednesday" /> <br />
+Thursday <input type="checkbox" name="day[]" value="Thursday" /> <br />
+Friday <input type="checkbox" name="day[]" value="Friday" /> <br />
+<input type="submit" value="Submit">
+</form>
+<?php
+echo "You submitted " . count($_GET['day']) . "values";
+foreach ($_GET['day'] as $d) {
+   echo $d . ", ";
+}
+?>

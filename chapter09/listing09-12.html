@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 9</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+   
+<form method="post" action="login.php" id="loginForm">
+   <label class="icon" for="username"><i class="fa fa-user fa-fw">
+   </i></label>
+   <input type="text" name="username" id="username" placeholder="User Name" />
+   <label class="icon" for="email"><i class="fa fa-envelope fa-fw">
+   </i></label>
+   <input type="text" name="email" id="email" placeholder="Email" />
+   <label class="icon" for="pass"><i class="fa fa-key fa-fw"></i>
+   </label>
+   <input type="password" name="pass" id="pass" placeholder="Password" />
+   <label class="icon" for="region"><i class="fa fa-home fa-fw"></i>
+   </label>
+   <input type="radio" name="region" id="region" value="Europe" class="bigRadio"><span>Europe</span>
+   <input type="radio" name="region" id="region" value="United States" class="bigRadio"><span>United States</span>
+   <label class="icon" for="options">
+   <i class="fa fa-fw" id="optLabel"></i></label>
+   <select name="options" id="options"></select>
+   <label class="icon" id="long" for="save">
+   <i class="fa fa-database fa-fw"></i> Remember Me</label>
+   <input type="checkbox" name="save" id="save" class="bigCheckBox" />
+   <button type="submit" ><i class="fa fa-reply fa-fw"></i> Register
+   </button>
+</form>
+<div id="errors" class="hidden"></div>
+        
+</body>
+</html>

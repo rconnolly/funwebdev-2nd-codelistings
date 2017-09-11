@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 9</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+   
+<p id="here">hello <span>there</span></p>
+<ul>
+   <li>France</li>
+   <li>Spain</li>
+   <li>Thailand</li>
+</ul>
+<div id="main">
+<a href="somewhere.html"><img src="whatever.gif" class="thumb"></a>
+</div>
+   
+<script>
+var node = document.getElementById("here");
+// outputs: hello <span>there</span>
+console.log(node.innerHTML);
+// outputs: hello there
+console.log(node.textContent);
+var items = document.getElementsByTagName("li");
+for (var i=0; i<items.length; i++) {
+// outputs: France, then Spain, then Thailand
+console.log(items[i].textContent);
+}
+var link = document.querySelector("#main a");
+// outputs: somewhere.html
+console.log(link.href);
+var img = document.querySelector("#main img");
+// outputs: whatever.gif
+console.log(img.src);
+// outputs: thumb
+console.log(img.className);
+</script>
+        
+</body>
+</html>

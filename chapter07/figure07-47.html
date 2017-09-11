@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 7</title>
+   <style>
+     .animated {
+        font-size: 2em;
+        margin-top: 5em;
+        margin-left: 10em;
+
+        animation-iteration-count: infinite;
+        animation-name: bounceIn;
+        animation-play-state: running;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+    }
+    .animated:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            color: blue;
+            opacity: 0;
+        }
+        70% {
+            transform: scale(1.4);
+            color: red;
+            opacity: 1;
+        }
+        100% {
+            color: green;
+            transform: scale(1);
+        }
+    }
+   </style>
+</head>
+<body>
+
+<p class="animated">Animate Me</p>
+</body>
+</html>

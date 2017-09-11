@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 10</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+<script>
+$(document).ready(function() {
+   // set up listeners knowing page loads before this runs
+   $("#example").click(function () {
+      $("#message").html("you clicked");
+   });
+});
+</script>
+</head>    
+<body>
+    
+<button id="example">Click me</button>
+<span id="message"></span>
+        
+</body>
+</html>

@@ -1,0 +1,42 @@
+<head>
+    ...
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div class="panel">
+    <div class="panel-header"><h3>Chat</h3></div>
+    <div class="panel-body"><ul id="messages"></ul></div>
+    <div class="panel-footer">
+       <form action="">
+          <input type="text" id="entry" autocomplete="off" />
+          <button>Send</button>
+       </form>
+    </div>
+</div>
+    
+<script>
+    // this initiates the WebSocket connection
+    var socket = io();
+
+    // get user name and then notify the server
+    var username = prompt('What\'s your username?');
+    $('.panel-header h3').html('Chat [' + username + ']');
+    socket.emit('username', username);
+
+    // user has entered a new message
+    $('form').submit(function() {
+      // send it to the server
+      socket.emit('chat message', $('#entry').val());
+      // clear text box after submit
+      $('#entry').val('');
+      // and cancel the submit
+      return false;
+    });
+
+    // a new chat message has been received
+    socket.on('chat message', function(msg){
+      $('#messages').append($('<li>').html(msg));
+    });
+</script>
+</body>
+    

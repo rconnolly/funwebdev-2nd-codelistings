@@ -1,0 +1,52 @@
+   <!DOCTYPE html>
+<html>
+<head>
+   <title>Share Your Travels</title>
+	<style>
+	html,body {
+		margin:0;
+		width:100%;
+		height:100%;
+		background: silver;
+		font-size: 20px;
+	}
+
+	.pixels {
+	width:200px;
+	height:50px;
+	background: teal;
+	}
+
+	.percent {
+	width:50%;
+	height:50%;
+	background: olive;
+	}
+	
+	.parentFixed {
+       width:400px;
+       height:150px;
+       background: beige;
+	}	
+	.parentRelative {
+       width:50%;
+       height:50%;
+       background: yellow;
+	}	
+
+	</style>
+<head>
+<body>
+<div class="parentFixed">
+	<strong>parent has fixed size</strong>
+	<div class="percent">
+	PERCENT - 50% of width and height
+	</div>
+</div>
+<div class="parentRelative">
+	<strong>parent has relative size</strong>
+	<div class="percent">
+	PERCENT - 50% of width and height
+	</div>
+</div>
+</body>

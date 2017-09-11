@@ -1,0 +1,2 @@
+<meta name="description" content="Share your vacation photos with friends!" />
+<meta name="robots" content="INDEX, NOFOLLOW" />

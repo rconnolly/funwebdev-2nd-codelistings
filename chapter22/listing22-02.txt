@@ -1,0 +1,9 @@
+[root@funwebdev rhoar]#  netstat -t
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address Foreign Address State PID/Program name
+tcp 0 0 *:3306 *:* LISTEN 1875/mysql
+tcp 0 0 *:22 *:* LISTEN 1751/sshd
+tcp 0 0 localhost:25 *:* LISTEN 1905/sendmail
+tcp 0 0 *:80 *:* LISTEN 3311/httpd
+
+

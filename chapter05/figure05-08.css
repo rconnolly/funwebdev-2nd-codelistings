@@ -1,0 +1,46 @@
+/* example 1 */
+table {
+   border: solid 1pt black;
+}
+
+/* example 2 */
+/*table {
+   border: solid 1pt black;
+}
+td {
+   border: solid 1pt black;
+}*/
+
+/* example 3 */
+/*table {
+   border: solid 1pt black;
+   border-collapse: collapse;   
+}
+td {
+   border: solid 1pt black;
+}*/
+
+/* example 4 */
+/*
+table {
+   border: solid 1pt black;
+   border-collapse: collapse;   
+}
+td {
+   border: solid 1pt black;
+   padding: 10pt;
+}
+*/
+
+/* example 5 */
+/*table {
+   border: solid 1pt black;
+   border-spacing: 10pt;
+}
+td {
+   border: solid 1pt black;
+}*/
+
+
+
+

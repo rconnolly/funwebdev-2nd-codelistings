@@ -1,0 +1,32 @@
+
+<html>
+<head>
+<title>chapter 10</title>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style>
+    .panel { width: 200px; height: 200px; background-color: #CFD8DC; font-weight: bold; font-size: 20px;
+        display: flex; align-items: center; justify-content: center; } 
+    span { font-size: 20px; }
+</style>     
+</head>    
+<body>
+<div class="panel">move over me</div>
+<span id="message"></span>
+<script>
+
+    
+// chaining handlers and 
+$(".panel")
+    .on("mousemove",function (e) {
+       $("#message").html("x=" + e.pageX + " y=" + e.pageY);
+    })
+    .on("mouseleave",function (e) {
+       $("#message").html("goodbye!");
+    })
+    .on("click",function () {
+       $("#message").html("stopped move reporting");
+       $(".panel").off("mousemove");
+    });     
+</script>    
+</body>   
+</html>

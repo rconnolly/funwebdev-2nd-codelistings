@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 7</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>p, h1, h2, h3, ul, li, body {
+    padding: 0;
+    margin: 0;   
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+header {
+    padding: 10px;
+    width: auto; 
+    margin: 0 0;
+    background-color: #1A237E;   
+    color: #FAFAFA;
+    height: 30px;
+}
+header h2 {    
+    float: left;
+    font-size: 18pt;  
+    margin-left:10px;
+    font-family: Lobster, "Times New Roman", serif
+}
+header nav {
+     float: right;  
+    margin: 10px 15px 10px 10px;
+    top: 5px;
+}
+a { 
+   text-decoration: none;    
+}
+.menu {
+   background-color: #C5CAE9;
+   width: 200px;
+   margin: 0;
+   padding: 0.25em;
+   font-size: 1.3em;
+   position: absolute;
+   left: -210px; 
+   border-right: 14px solid #3F51B5;
+   
+   transition: left .6s ease-out;
+}
+
+.menu:hover {
+   left: 0;
+   transition: left .6s ease-out;
+}
+
+.menu ul {
+   list-style: none;
+   margin: 0;
+   padding: 0.35em;
+}
+
+.menu ul li {
+   margin: 0.75em 0.25em;  
+   border-bottom: solid 1pt #283593;
+}
+
+.menu p {
+   color: white;
+   width: 30px;
+   position: relative;
+   transform: translatex(205px);
+}
+
+
+    </style>
+
+</head>
+<body>
+<header>
+    <h2>Share Your Travels</h2>
+    <nav><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/491042/menu.png">      </nav>
+</header>
+<nav class="menu">
+   <p><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+   <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Photos</a></li>
+      <li><a href="#">Contact</a></li>
+   </ul>
+</nav>
+
+</body>
+</html>

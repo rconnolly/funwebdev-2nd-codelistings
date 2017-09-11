@@ -1,0 +1,95 @@
+
+h1, h2, h3 {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+nav ul {
+     list-style: none;   
+    padding-left: 1.5em;
+}
+nav li {
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+nav li a:link {
+    color: #F48FB1;
+}
+
+header {
+   background: #1A237E;
+   color: white;
+   flex-basis: 100%;
+}
+footer {
+   background: #1A237E;
+   color: white;   
+   flex-basis: 100%;
+}
+
+/* parent container */
+.container {
+   display:flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:stretch;
+}
+
+/* left column */
+nav {   
+   color: white;
+    background: #3F51B5;
+    flex: 1 0 7em;
+    margin: 0.5em 0 0.5em 0;    
+}
+/* right column */
+aside {
+   background: #9FA8DA;
+    flex-grow: 1;
+    flex-basis: 10em;
+    margin: 0.5em 0 0.5em 0;
+
+}
+
+
+/* middle column */
+main {
+   margin: 0.5em;
+   background: white;
+}
+
+/* add nested flexbox within main */
+main {
+    flex: 1 0 500px;
+}
+.media {
+    display: flex; 
+    align-items:flex-start;
+    margin: 0.5em;
+}
+.media-image {
+     margin-right: 0.5em;   
+}
+.media-body {
+    padding: 0.25em;
+}
+
+
+/* add nested flexbox within aside */
+aside h3 {
+    text-align: center;
+}
+section img {
+    max-width: 100%;
+}
+.browse {
+   justify-content: space-around;
+}
+.browse div {
+    margin: 0.25em;
+}

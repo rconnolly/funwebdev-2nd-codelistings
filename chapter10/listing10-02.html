@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 10</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+    
+<p id="here">hello <span>there</span></p>
+<ul>
+<li>France</li>
+<li>Spain</li>
+<li>Thailand</li>
+</ul>
+
+<script>
+/* selecting using regular JavaScript */
+var node = document.getElementById("here");
+var link = document.querySelectorAll("ul li");
+
+/* equivalent selection using jQuery */
+node = $("#here");
+link = $("ul li");
+</script>
+    
+    
+</body>
+</html>

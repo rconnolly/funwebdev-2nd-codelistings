@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Chapter 10</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>    
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <style>
+       .email {
+          cursor:pointer;
+       }
+    </style>      
+</head>    
+<body>
+    
+<div class="contact">
+  <p>Randy Connolly</p>
+  <div class="email">Show email</div>
+</div>
+<div class="contact">
+  <p>Ricardo Hoar</p>
+  <div class="email">Show email</div>
+</div>
+
+    
+<script>
+$(".email").click(function() {
+     // Build email from 1st letter of first name + lastname 
+     // @ mtroyal.ca
+     var fullName = $(this).prev().html();
+     var firstName = fullName.split(" ")[0];
+     var address = firstName.charAt(0) + fullName.split(" ")[1] +
+                   "@mtroyal.ca";
+     $(this).hide();        // hide the clicked icon.
+     $(this).html("<a href='mailto:"+address+"'>Mail Us</a>");
+     $(this).show(1000);   // slowly show the email address.
+});
+
+</script>    
+</body>   
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 7</title>
+   <style>
+    h1 { font-size: 1.5 em; }
+    article {
+
+        margin: 5px 90px;
+        padding: 5px 20px;
+        position: relative;
+    }
+    figure {    
+        padding: 10px;
+        width: 200px;
+        margin: 10px;
+        position: relative;
+    }
+
+    figcaption.popup {
+        /**Style the frame**/
+        padding: 10px; 
+        background: #e1e1e1; 
+        
+        /*add a drop shadow to the frame*/
+        box-shadow: 0 0 15px rgba(0,0,0, .75);
+
+        position: absolute;
+        visibility: hidden;
+    }
+
+    figure.thumbnail:hover figcaption.popup {
+        visibility: visible;
+
+        top: 0;
+        left: 100px;
+        position: absolute;
+    }
+      
+   </style>
+</head>
+<body>
+
+<article>
+ 
+<figure class="thumbnail">
+  <img src="images/828.jpg" alt="" />
+  <figcaption class="popup">
+      <img src="images/828-bigger.jpg" alt="" />
+      <p>The library in the British Museum in London</p>
+  </figcaption>
+</figure>
+
+</article>
+</body>
+</html>

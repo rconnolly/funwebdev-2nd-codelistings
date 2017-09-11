@@ -1,0 +1,45 @@
+
+h1, h2, h3 {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+nav li {
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+nav li a:link {
+    color: #F48FB1;
+}
+
+
+.container {
+   display:flex;
+}
+header {
+   background: #1A237E;
+   color: white;
+
+}
+footer {
+   background: #1A237E;
+   color: white;   
+
+}
+nav {
+   background: #3F51B5;
+   color: white;
+
+}
+aside {
+   background: #9FA8DA;
+
+}
+main {
+   background: #E8EAF6;
+
+}

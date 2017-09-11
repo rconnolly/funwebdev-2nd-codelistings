@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Extended example</title>
+    <link rel="stylesheet" href="css/extended-example1.css">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+<script>
+$(function () {
+   $("#addTop").on("click", function () {
+       if ($("#entry").val()) {
+           $("#list").prepend( createListItem() );
+        }
+   });
+   $("#addBottom").on("click", function () {
+       if ($("#entry").val()) {
+           $("#list").append( createListItem() );
+       }
+   });
+   function createListItem() {
+       var item = $("<li>" + $("#entry").val() + "</li>");
+       item.addClass("fadeEmphasis");
+       return item;
+   }
+});
+</script>      
+</head>    
+<body>
+<main>  
+<div class="panel">
+    <label>List Text</label>
+    <input type="text" id="entry" placeholder="Enter text for new list item"/>
+    <p>
+    <button id="addTop" >Add to Top</button>
+    <button id="addBottom" >Add to Bottom</button>
+    </p>
+</div>
+    
+<ul id="list">
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+</ul>  
+</main>      
+   
+</body>   
+</html>

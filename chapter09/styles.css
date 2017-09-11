@@ -1,0 +1,32 @@
+/* fades content to invisible across 1.5 seconds */
+.makeItDisappear {
+   -webkit-filter: opacity(0);
+   -webkit-transition: -webkit-filter 1.5s;
+   filter: opacity(0);
+   transition-duration: 1.5s;
+   transition-property: filter -webkit-filter;
+}
+/* applies grayscale filter across 1.5 seconds */
+.makeItGray {
+   -webkit-filter: grayscale(100%);
+   -webkit-transition: -webkit-filter 1.5s;
+   filter: grayscale(100%);
+   transition: filter 1.5s;
+}
+/* removes filters across 1.5 seconds */
+.makeItNormal {
+   -webkit-filter: none;
+   -webkit-transition: -webkit-filter 1.5s;
+   filter: none;
+   transition: filter 1.5s;
+}
+
+#testButton {
+   display: block;
+   height: 35px;
+   background-color: darkorange;
+   color: white;
+   width: 150px;
+}
+
+#main { margin: 30px;}

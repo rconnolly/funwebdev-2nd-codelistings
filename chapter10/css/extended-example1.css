@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1em;
+}
+main {
+    width: 60%;
+    margin: 0.5em;
+}
+.panel {
+    margin: 1em;
+    background-color: #EEEEEE;
+    padding: 0.5em;
+}
+
+#list {
+    margin: 1em;
+    list-style: none;  
+    padding-left: 0.5em;
+}
+#list li {
+    padding: 0.5em;
+}
+button {
+      border: none;
+  border-radius: 3px;
+  height: 32px;
+  color: black;
+  font-size: 14px;
+  background: #EF6C00;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+    color: white;
+}
+
+.fadeEmphasis {
+    animation: fadeout 2s forwards;
+    animation-delay: 0s;
+    
+}
+
+@keyframes fadeout {
+    from {
+        background-color: #E0E0E0;
+    }
+    to {
+        background-color:white;
+    }
+
+}
+

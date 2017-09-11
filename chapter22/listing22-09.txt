@@ -1,0 +1,8 @@
+# "%h %l %u %t \"%r\" %>s %b" //common
+24.114.40.54 - - [04/Aug/1913:16:38:22 +0000] "GET /css1.css HTTP/1.1" 500 635
+//combined
+# "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+24.114.40.54 - - [04/Aug/1913:16:38:22 +0000] "GET /css1.css
+  HTTP/1.1" 500 635 "http://funwebdev.com/" "Mozilla/5.0 (iPhone;
+  CPU iPhone OS 6_1_4 like Mac OS X) AppleWebKit/536.26 (KHTML,
+  like Gecko) Version/6.0 Mobile/10B350 Safari/8536.25"

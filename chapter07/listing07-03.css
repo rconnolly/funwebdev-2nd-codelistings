@@ -1,0 +1,16 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        color: blue;
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.4);
+        color: red;
+        opacity: 1;
+    }
+    100% {
+        color: green;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,56 @@
+<html ng-app="demo">
+<head>
+<title>Chapter 20</title>
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://code.angularjs.org/1.5.0/angular.min.js" ></script>
+<script>
+var myapp = angular.module('demo',[]);
+// notice that our callback function is passed the $http parameter.
+// parameters are injected by the AngularJS system "behind-the-scenes"
+myapp.controller('myController', function ($scope, $http) {
+    // retrieve country data from web service
+    var url = 'http://www.randyconnolly.com/funwebdev/services/travel/ countries.php?continent=EU';
+    $http.get(url)
+        // if successful save retrieved country data in our model
+        .then(function (response) {
+            $scope.countries = response.data;
+        });
+    // some additional model data variable to handle sorting in table
+    $scope.sortField = 'name';
+    $scope.reverse = false;
+});
+</script>
+</head>
+<body ng-controller="myController">
+    <div id="search">
+      Country or Capital Search:
+      <input type="text" ng-model="search"  />
+    </div>
+    <table>
+      <tr>
+	<th>
+           <a href="" ng-click="sortField='name';
+                          reverse=!reverse">
+               Country</a>
+        </th>
+        <th>
+            <a href="" ng-click="sortField='population'; reverse=
+                          !reverse">
+               Population</a>
+	</th>
+	<th>
+             <a href="" ng-click="sortField='capital'; reverse=
+                          !reverse">
+               Capital</a>
+        </th>
+      </tr>
+      <tr  ng-repeat="country in countries | filter:search |
+                      orderBy:sortField:reverse">
+           <td>{{country.name }}</td>
+           <td>{{country.population | number}}</td>
+           <td>{{country.capital}}</td>
+      </tr>
+    </table>
+</body>
+</html>
+    

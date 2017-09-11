@@ -1,0 +1,62 @@
+<html>
+<head>
+   <title>Chapter 10</title>
+   <style>
+        body {
+            background-color: #E8EAF6;
+        }
+        main {
+            margin: 1em;
+            width: 60%;
+            padding: 1em;
+        }
+        select {
+            padding: 0.5em;
+        }
+        #results {
+            margin-top: 0.5em;
+        }
+   </style>
+   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script>
+   $(function() {
+       $("#country").change(function() {
+           var param = "iso=" + $('#country').val();
+      $.get("http://www.randyconnolly.com/funwebdev/services/travel/cities.php", param)
+          .done(function (data) {
+              var select = $("<select id='cities'></select>");
+              // alternate way to loop through an array using jquery $.each() method
+              $.each(data, function(index,city) {
+                  select.append('<option value="' + city.id + '">' + city.name + "</option>");
+              });
+              $("#results").empty().append(select);                
+          })
+          .fail(function (jqXHR) {
+              alert("Error: " + jqXHR.status);
+          })
+          .always(function () {
+              console.log("service cities request finished");
+          });
+       });
+   });
+   </script>      
+</head>    
+<body>
+    <main>
+      <select id="country">
+          <option value=0>Select a country</option>
+          <option value='CA'>Canada</option>
+          <option value='FR'>France</option>
+          <option value='DE'>Germany</option>
+          <option value='IT'>Italy</option>
+          <option value='US'>United States</option>
+      </select>
+
+      <div id="results"></div>
+   </main>
+
+
+</body>   
+</html>
+
+

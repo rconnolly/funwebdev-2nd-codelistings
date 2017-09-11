@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 10</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+    
+<p id="here">hello</p>
+<ul>
+<li>France</li>
+<li>Spain</li>
+<li>Thailand</li>
+</ul>
+
+<script>
+/* selecting using regular JavaScript   */ 
+document.getElementById("here").innerHTML = "new content";
+    
+var items = document.querySelectorAll("ul li"); 
+    
+for (var i=0; i<items.length; i++) {
+   items[i].style.backgroundColor = "yellow";   
+}
+ 
+
+/* equivalent selection using jQuery */
+$("#here").html("new content");
+$("ul li").css("background-color", "yellow");
+</script>
+        
+</body>
+</html>

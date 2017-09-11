@@ -1,0 +1,6 @@
+User-agent: googlebot
+Disallow:
+User-agent: funbot
+Disallow: /secret/
+User-agent: *
+Disallow: /

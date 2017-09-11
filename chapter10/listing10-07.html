@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 10</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" ></script>
+
+</head>    
+<body>
+    
+<div id="example"></div>    
+<script>
+// pure JavaScript way
+var jsLink = document.createElement("a");
+jsLink.href = "http://www.funwebdev.com";
+jsLink.innerHTML = "Visit Us";
+jsLink.title = "JS";
+//document.getElementById("example").appendChild(jsLink);
+    
+// jQuery version 1
+var link1 = $("<a href='http://funwebdev.com' title='jQuery'>Visit Us</a>");
+//$("#example").append(link1);
+    
+// jQuery version 2
+var link2 = $("<a></a>");
+link2.attr("href",'http://funwebdev.com');
+link2.attr("title","jQuery verbose");
+link2.html("Visit Us");
+   
+//$("#example").append(link2);
+    
+// version 3 ... also not creating a variable which will be more common once we start chaining
+$('<a>', {
+            href: 'http://funwebdev.com',
+            title: 'jQuery',
+            text: 'Visit Us'
+          }
+ ).appendTo($('#example'));    
+    
+
+</script>    
+
+</body>
+</html>

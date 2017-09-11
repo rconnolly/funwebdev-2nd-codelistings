@@ -1,0 +1,100 @@
+
+h1, h2, h3 {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+nav li {
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+nav li a:link {
+    color: #F48FB1;
+}
+
+
+.container {
+   display:flex;
+   flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:stretch;
+}
+
+
+header {
+   background: #1A237E;
+   color: white;
+   flex-basis: 100%;
+}
+footer {
+   background: #1A237E;
+   color: white;   
+   flex-basis: 100%;
+}
+
+nav {
+   background: #3F51B5;
+   color: white;
+    flex-basis: 9em;
+}
+aside {
+   background: #9FA8DA;
+    flex-basis: 13em;
+}
+
+
+main {
+    margin: 0.5em;
+   background: #E8EAF6;
+    flex-grow: 1;
+
+}
+main h2 {
+    margin-top: 0;
+    
+}
+.media {
+    display: flex;
+flex-flow: row wrap;    
+    _flex-wrap: nowrap;
+    margin: 0;
+}
+.media-image {
+    border: 1pt solid black;
+    flex-basis: 340px;
+}
+.media-body {
+   border: 1pt solid black;
+    padding: 0.25em;
+    _flex-grow: 1;
+    flex-basis: 100%;
+}
+.media-body p {
+    
+}
+
+
+
+
+
+
+
+
+section img {
+    max-width: 100%;
+}
+
+aside h3 {
+    text-align: center;
+}
+.browse {
+   justify-content: space-around;
+}
+.browse div {
+    margin: 0.25em;
+}
